@@ -24,11 +24,11 @@ namespace Tyuiu.PozhdinAA.Sprint4.Task4.V8
             Console.WriteLine("* Дан двумерный целочисленный массив 5 на 5 элементов, заполненный        *");
             Console.WriteLine("* значениями с клавиатуры в диапазоне от 1 до 6. Заменить четные элементы *");
             Console.WriteLine("* массива на 1.                                                           *");
-            Console.WriteLine("* 3, 3, 1, 1, 4,                                                          *");
-            Console.WriteLine("* 2, 4, 2, 1, 5,                                                          *");
-            Console.WriteLine("* 2, 2, 2, 2, 2,                                                          *");
-            Console.WriteLine("* 1, 5, 4, 5, 4,                                                          *");
-            Console.WriteLine("* 1, 2, 3, 2, 4,                                                          *");
+            Console.WriteLine("* 1, 3, 2, 2, 5,                                                          *");
+            Console.WriteLine("* 6, 1, 5, 5, 2,                                                          *");
+            Console.WriteLine("* 1, 5, 4, 1, 4,                                                          *");
+            Console.WriteLine("* 4, 1, 4, 4, 5,                                                          *");
+            Console.WriteLine("* 4, 6, 1, 1, 4,                                                          *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
@@ -52,7 +52,7 @@ namespace Tyuiu.PozhdinAA.Sprint4.Task4.V8
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    if ((matrix[i, j] < 1) || (matrix[i, j] > 5)) m += 1;
+                    if ((matrix[i, j] < 1) || (matrix[i, j] > 6)) m += 1;
                 }
             }
             if (m > 0)
